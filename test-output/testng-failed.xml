@@ -5,7 +5,9 @@
     <classes>
       <class name="group1.mymarketTest.MainTest">
         <methods>
-          <include name="getMainPage"/>
+          <include name="launchApp"/>
+          <include name="getMainTest"/>
+          <include name="shutD"/>
         </methods>
       </class> <!-- group1.mymarketTest.MainTest -->
     </classes>

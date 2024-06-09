@@ -1,5 +1,6 @@
 package group1.mymarketTest;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
@@ -12,19 +13,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import abstractClasses.AbstractWaits;
+import shared.BaseTest;
 
-public class MainTest {
+public class MainTest extends BaseTest{
 	
 	
 
 	@Test
-	public void getMainPage() throws InterruptedException {
-		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
+	public void getMainTest() throws InterruptedException, IOException {
 		
-		loginPage loginpage = new loginPage(driver);
-		loginpage.goToPage();
-
+//		loginPage loginpage = launchApp();
+		
 //		after login
 
 //		find search
