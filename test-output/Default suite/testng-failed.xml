@@ -6,7 +6,7 @@
       <class name="group1.mymarketTest.MainTest">
         <methods>
           <include name="launchApp"/>
-          <include name="getMainTest"/>
+          <include name="getMainTest" invocation-numbers="1"/>
           <include name="shutD"/>
         </methods>
       </class> <!-- group1.mymarketTest.MainTest -->

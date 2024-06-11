@@ -1,10 +1,14 @@
 package shared;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -41,16 +45,24 @@ public class BaseTest {
 //		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		return driver;
 	}
+	
+	public String takeScreenshot(String testCaseName, WebDriver driver) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File source =  ts.getScreenshotAs(OutputType.FILE);
+		File file = new File(System.getProperty("user.dir") + "\\reports\\" + testCaseName + ".png");
+		FileUtils.copyFile(source, file);
+		return System.getProperty("user.dir") + "\\reports\\" + testCaseName + ".png";	
+	}
 
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public loginPage launchApp() throws IOException {
 		driver = initilizeDriver();
 		loginpage = new loginPage(driver);
 		loginpage.goToPage();
 		return loginpage;
 	}
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void shutD() {
 		driver.close();
 	}

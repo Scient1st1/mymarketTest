@@ -25,11 +25,12 @@ public class CataloguePage extends AbstractWaits{
 	
 	By waitBy = By.cssSelector("#root svg");
 	By productsBy = By.cssSelector(".card-col a");
-	public SingleProductPage getFirstProduct() {
+	
+	public SingleProductPage getProduct(int num) {
 		waitForElementToAppear(waitBy);
 		waitForElementToDisappear(waitBy);
 		waitForElementToAppear(productsBy);
-		WebElement first = products.get(0);
+		WebElement first = products.get(num);
 		first.click();
 		return new SingleProductPage(driver);
 	}
