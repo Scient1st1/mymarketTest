@@ -14,14 +14,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.sun.net.httpserver.Authenticator.Retry;
+
 import abstractClasses.AbstractWaits;
 import shared.BaseTest;
 import shared.DataReaderJson;
+import shared.RetryDemo;
 
 public class MainTest extends BaseTest{
 	
 	
-	@Test(dataProvider="getData")
+	@Test(dataProvider="getData", retryAnalyzer=RetryDemo.class)
 	public void getMainTest(HashMap <String,String> input) throws IOException, InterruptedException {
 
 

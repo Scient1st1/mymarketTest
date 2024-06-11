@@ -16,9 +16,11 @@ public class ListenersDemo extends BaseTest implements ITestListener {
 	
 	ExtentReports extent = ExtentReporter.getReportObj();
 	ExtentTest test;
+	ThreadLocal<ExtentTest> tl = new ThreadLocal<ExtentTest>();
 	public void onTestStart(ITestResult result) {
 		
 		test = extent.createTest(result.getMethod().getMethodName());
+		tl.set(test);
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -27,7 +29,7 @@ public class ListenersDemo extends BaseTest implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 		test.log(Status.FAIL, "Test failed");
-		test.fail(result.getThrowable());
+		tl.get().fail(result.getThrowable());
 		
 		try {
 			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
@@ -43,7 +45,7 @@ public class ListenersDemo extends BaseTest implements ITestListener {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		test.addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
+		tl.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
 	}
 
 	public void onTestSkipped(ITestResult result) {
