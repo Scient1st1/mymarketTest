@@ -23,7 +23,7 @@ import shared.RetryDemo;
 
 public class MainTest extends BaseTest{
 	
-	
+	public String prodName = "samsung";
 	@Test(dataProvider="getData", retryAnalyzer=RetryDemo.class)
 	public void getMainTest(HashMap <String,String> input) throws IOException, InterruptedException {
 
@@ -31,7 +31,7 @@ public class MainTest extends BaseTest{
 		MainPage mainPage = loginpage.loginApp(input.get("email"), input.get("password"));
 		Thread.sleep(8000);
 
-		CataloguePage catPage = mainPage.startSearch();
+		CataloguePage catPage = mainPage.startSearch(prodName);
 
 		SingleProductPage singlePage = catPage.getProduct(Integer.parseInt(input.get("productIndex")));
 		

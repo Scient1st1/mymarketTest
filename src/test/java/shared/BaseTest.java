@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -27,6 +28,7 @@ public class BaseTest {
 	public WebDriver driver;
 	public loginPage loginpage;
 	public WebDriver initilizeDriver() throws IOException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Drivers for selenium\\chromedriver-win64\\chromedriver.exe");
 
 		Properties prop = new Properties();
 		String userDir = System.getProperty("user.dir");
@@ -42,7 +44,8 @@ public class BaseTest {
 		}
 
 		driver.manage().window().maximize();
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		return driver;
 	}
 	

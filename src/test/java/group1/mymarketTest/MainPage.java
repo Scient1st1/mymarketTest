@@ -21,10 +21,11 @@ public class MainPage extends AbstractWaits{
 
 	@FindBy(xpath="//*[text()='ძებნა']")
 	WebElement search;
+	@FindBy(css="[name='searchValue']")
+	WebElement searchInput;
 	
-	
-	public CataloguePage startSearch() throws InterruptedException {
-		
+	public CataloguePage startSearch(String prodName) throws InterruptedException {
+		searchInput.sendKeys(prodName);
 		search.click();
 		return new CataloguePage(driver);
 	}
