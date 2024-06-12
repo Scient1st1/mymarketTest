@@ -28,13 +28,14 @@ public class BaseTest {
 	public WebDriver driver;
 	public loginPage loginpage;
 	public WebDriver initilizeDriver() throws IOException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Drivers for selenium\\chromedriver-win64\\chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver", "C:\\Drivers for selenium\\chromedriver-win64\\chromedriver.exe");
 
 		Properties prop = new Properties();
 		String userDir = System.getProperty("user.dir");
 		FileInputStream fis = new FileInputStream(userDir + "\\src\\test\\java\\shared\\data.properties");
 		prop.load(fis);
-		String browserName = prop.getProperty("browser");
+		
+		String browserName = System.getProperty("browser")!=null ? System.getProperty("browser") : prop.getProperty("browser");
 		if (browserName.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 		} else if (browserName.equalsIgnoreCase("firefox")) {

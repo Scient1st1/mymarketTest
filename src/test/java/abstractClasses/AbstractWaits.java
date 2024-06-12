@@ -21,7 +21,7 @@ public class AbstractWaits {
 	}
 	
 	public void waitForElementToAppear(By ByLocator) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(ByLocator));
 	}
 	
