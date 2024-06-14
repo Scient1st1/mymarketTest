@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-11T19:05:06 GET" name="Suite" finished-at="2024-06-11T19:09:24 GET" duration-ms="258767">
+  <suite started-at="2024-06-13T13:08:42 GET" name="Suite" finished-at="2024-06-13T13:09:35 GET" duration-ms="53163">
     <groups>
     </groups>
-    <test started-at="2024-06-11T19:05:06 GET" name="Test" finished-at="2024-06-11T19:08:16 GET" duration-ms="189994">
+    <test started-at="2024-06-13T13:08:42 GET" name="Test" finished-at="2024-06-13T13:09:29 GET" duration-ms="46822">
       <class name="group1.mymarketTest.MainTest">
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:group1.mymarketTest.MainTest@6138e79a]" started-at="2024-06-11T19:05:06 GET" name="launchApp" finished-at="2024-06-11T19:06:37 GET" duration-ms="91506" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:group1.mymarketTest.MainTest@6138e79a]" started-at="2024-06-13T13:08:42 GET" name="launchApp" finished-at="2024-06-13T13:08:48 GET" duration-ms="5456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="getMainTest(java.util.HashMap)[pri:0, instance:group1.mymarketTest.MainTest@6138e79a]" started-at="2024-06-11T19:06:37 GET" name="getMainTest" data-provider="getData" finished-at="2024-06-11T19:07:31 GET" duration-ms="53738" status="PASS">
+        <test-method signature="getMainTest(java.util.HashMap)[pri:0, instance:group1.mymarketTest.MainTest@6138e79a]" started-at="2024-06-13T13:08:48 GET" name="getMainTest" data-provider="getData" finished-at="2024-06-13T13:09:05 GET" duration-ms="17092" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getMainTest -->
-        <test-method is-config="true" signature="shutD()[pri:0, instance:group1.mymarketTest.MainTest@6138e79a]" started-at="2024-06-11T19:07:31 GET" name="shutD" finished-at="2024-06-11T19:07:31 GET" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="shutD()[pri:0, instance:group1.mymarketTest.MainTest@6138e79a]" started-at="2024-06-13T13:09:05 GET" name="shutD" finished-at="2024-06-13T13:09:05 GET" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutD -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:group1.mymarketTest.MainTest@6138e79a]" started-at="2024-06-11T19:07:31 GET" name="launchApp" finished-at="2024-06-11T19:07:35 GET" duration-ms="3220" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:group1.mymarketTest.MainTest@6138e79a]" started-at="2024-06-13T13:09:05 GET" name="launchApp" finished-at="2024-06-13T13:09:09 GET" duration-ms="3670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="getMainTest(java.util.HashMap)[pri:0, instance:group1.mymarketTest.MainTest@6138e79a]" started-at="2024-06-11T19:07:35 GET" name="getMainTest" data-provider="getData" finished-at="2024-06-11T19:08:15 GET" duration-ms="40580" status="FAIL">
+        <test-method signature="getMainTest(java.util.HashMap)[pri:0, instance:group1.mymarketTest.MainTest@6138e79a]" started-at="2024-06-13T13:09:09 GET" name="getMainTest" data-provider="getData" finished-at="2024-06-13T13:09:28 GET" duration-ms="19615" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -46,9 +46,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9bd0d023c1d05321020fb35c6786303b, findElement {value=[name='searchValue'], using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.76 (67dcf7562b8f..., userDataDir: C:\Users\levan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56099}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56099/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9bd0d023c1d05321020fb35c6786303b]]>
+Command: [0675d731ea6b73c85aab6b8c48f825b5, findElement {using=css selector, value=[name='searchValue']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\levan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50221}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50221/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0675d731ea6b73c85aab6b8c48f825b5]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[name='searchValue']"}
@@ -57,9 +57,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9bd0d023c1d05321020fb35c6786303b, findElement {value=[name='searchValue'], using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.76 (67dcf7562b8f..., userDataDir: C:\Users\levan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56099}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56099/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9bd0d023c1d05321020fb35c6786303b
+Command: [0675d731ea6b73c85aab6b8c48f825b5, findElement {using=css selector, value=[name='searchValue']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\levan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50221}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50221/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0675d731ea6b73c85aab6b8c48f825b5
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -115,23 +115,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getMainTest -->
-        <test-method is-config="true" signature="shutD()[pri:0, instance:group1.mymarketTest.MainTest@6138e79a]" started-at="2024-06-11T19:08:16 GET" name="shutD" finished-at="2024-06-11T19:08:16 GET" duration-ms="91" status="PASS">
+        <test-method is-config="true" signature="shutD()[pri:0, instance:group1.mymarketTest.MainTest@6138e79a]" started-at="2024-06-13T13:09:29 GET" name="shutD" finished-at="2024-06-13T13:09:29 GET" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutD -->
       </class> <!-- group1.mymarketTest.MainTest -->
     </test> <!-- Test -->
-    <test started-at="2024-06-11T19:08:16 GET" name="Test1" finished-at="2024-06-11T19:09:24 GET" duration-ms="68407">
+    <test started-at="2024-06-13T13:09:29 GET" name="Test1" finished-at="2024-06-13T13:09:35 GET" duration-ms="5940">
       <class name="group1.mymarketTest.ErrorValidationTest">
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:group1.mymarketTest.ErrorValidationTest@126945f9]" started-at="2024-06-11T19:08:16 GET" name="launchApp" finished-at="2024-06-11T19:09:18 GET" duration-ms="62064" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:group1.mymarketTest.ErrorValidationTest@126945f9]" started-at="2024-06-13T13:09:29 GET" name="launchApp" finished-at="2024-06-13T13:09:33 GET" duration-ms="3617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="wrongEmailOrPass()[pri:0, instance:group1.mymarketTest.ErrorValidationTest@126945f9]" started-at="2024-06-11T19:09:18 GET" name="wrongEmailOrPass" finished-at="2024-06-11T19:09:24 GET" duration-ms="6238" status="PASS">
+        <test-method signature="wrongEmailOrPass()[pri:0, instance:group1.mymarketTest.ErrorValidationTest@126945f9]" started-at="2024-06-13T13:09:33 GET" name="wrongEmailOrPass" finished-at="2024-06-13T13:09:35 GET" duration-ms="2220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongEmailOrPass -->
-        <test-method is-config="true" signature="shutD()[pri:0, instance:group1.mymarketTest.ErrorValidationTest@126945f9]" started-at="2024-06-11T19:09:24 GET" name="shutD" finished-at="2024-06-11T19:09:24 GET" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="shutD()[pri:0, instance:group1.mymarketTest.ErrorValidationTest@126945f9]" started-at="2024-06-13T13:09:35 GET" name="shutD" finished-at="2024-06-13T13:09:35 GET" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutD -->
